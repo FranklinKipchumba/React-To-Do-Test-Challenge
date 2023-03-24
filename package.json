@@ -1,0 +1,19 @@
+{
+  "name": "react-to-do-test-challenge",
+  "version": "1.0.0",
+  "description": "create a react app that allows user to sign in, add data and updatethem and can also delete them",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranklinKipchumba/React-To-Do-Test-Challenge.git"
+  },
+  "author": "Franklin Kipchumba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranklinKipchumba/React-To-Do-Test-Challenge/issues"
+  },
+  "homepage": "https://github.com/FranklinKipchumba/React-To-Do-Test-Challenge#readme"
+}
