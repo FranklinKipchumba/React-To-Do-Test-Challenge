@@ -1,40 +1,37 @@
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+import React, { useState } from "react";
 
-function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const history = useHistory();
+function Login({ handleLogin }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post('/api/auth/login', { email, password });
-      localStorage.setItem('token', response.data.token);
-      history.push('/');
-    } catch (error) {
-      console.log(error);
-    }
+    // TODO: perform authentication logic here
+    handleLogin();
   };
 
   return (
-    <div>
-      <form onSubmit={handleLogin}>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Email:
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+      </label>
+      <label>
+        Password:
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+      </label>
+      <button type="submit">Log in</button>
+    </form>
   );
 }
 
 export default Login;
+
