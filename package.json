@@ -4,7 +4,7 @@
   "description": "create a react app that allows user to sign in, add data and updatethem and can also delete them",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "start": "npm start"
   },
   "repository": {
     "type": "git",
