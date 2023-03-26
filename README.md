@@ -3,7 +3,6 @@
 # Description
 It is a banking app that a user can sign up or login in inorder to transact and also can view their transactions, and can also update their data or delete them
 
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
