@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Home from './components/Home/home';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
-import Login from './components/login/Login';
-import Signup from './components/signup/Signup';
-import Dashboard from './components/Dashboard';
-import AddData from './components/Form/AddForm';
-import EditData from './components/Form/UpdateForm';
+import Navbar from './navbar/Navbar';
+import Home from './Home/home';
+import Services from './Services';
+import About from './About';
+import Contact from './Contact';
+import Login from './login/Login';
+import Signup from './signup/Signup';
+import Dashboard from './Dashboard';
+import AddForm from './Form/Addform';
+import EditForm from './UpdateForm';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -42,7 +42,7 @@ function App() {
           />
           <Route
             path="/edit-data/:id"
-            render={(props) => <UpdateForm {...props} user={user} />}
+            render={(props) => <EditForm {...props} user={user} />}
           />
         </Switch>
       </div>
